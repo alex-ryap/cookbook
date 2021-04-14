@@ -22,11 +22,6 @@ section {
           align-items: center;
 }
 
-section:first-child {
-  padding-top: 0;
-  display: block;
-}
-
 .heading {
   text-align: center;
 }
@@ -34,6 +29,40 @@ section:first-child {
 .info {
   width: 60%;
   text-align: center;
+}
+
+.ideas-cards,
+.recipes-cards,
+.articles-cards {
+  margin: 50px 0;
+}
+
+.card {
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card-shadow {
+  -webkit-box-shadow: 5px 5px 20px rgba(53, 110, 173, 0.2);
+          box-shadow: 5px 5px 20px rgba(53, 110, 173, 0.2);
+}
+
+.header .menu {
+  padding: 20px;
+  -webkit-box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+          box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+}
+
+.header .menu .logo {
+  margin-right: 36%;
 }
 
 .page-item.active .page-link {
@@ -44,10 +73,6 @@ section:first-child {
 .page-link,
 .page-link:hover {
   color: #2ecc71;
-}
-
-.top .logo {
-  width: 35%;
 }
 
 .top .name-brand {
@@ -66,12 +91,21 @@ section:first-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 25vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.top .top-content-logo {
+  font-size: 5em;
+  margin-bottom: 30px;
 }
 
 .top .top-content-title {
@@ -81,6 +115,8 @@ section:first-child {
 
 .top .top-content-name-brand {
   font-size: 64px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .top .carousel-content {
@@ -97,18 +133,6 @@ section:first-child {
 
 .top .carousel-content-text {
   margin-bottom: 0;
-}
-
-.ideas-cards {
-  margin: 50px 0;
-}
-
-.recipes-cards {
-  margin: 50px 0;
-}
-
-.articles-cards {
-  margin: 50px 0;
 }
 
 .footer {
@@ -159,7 +183,7 @@ section:first-child {
 }
 
 @media (max-width: 767px) {
-  .card-margin {
+  .col {
     margin-bottom: 30px;
   }
 }

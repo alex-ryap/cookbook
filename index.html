@@ -20,12 +20,12 @@
     <title>CookBook</title>
   </head>
   <body>
-    <section class="top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="header">
+      <nav class="navbar menu navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#">
-            <i class="fas fa-cookie-bite fa-lg"></i>
-            <span class="name-brand name-logo">CookBook</span>
+            <i class="fas fa-cookie-bite fa-2x"></i>
+            <!-- <span class="name-brand name-logo">CookBook</span> -->
           </a>
           <button
             class="navbar-toggler"
@@ -82,7 +82,10 @@
           </div>
         </div>
       </nav>
+    </header>
+    <section class="top">
       <div class="top-content">
+        <i class="fas fa-cookie-bite fa-4x top-content-logo"></i>
         <h1 class="top-content-title">
           <span class="name-brand top-content-name-brand">CookBook</span>
           -<br />твой блокнот с рецептами,<br />только в интернете
@@ -152,7 +155,7 @@
       <div class="ideas-cards container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100 card-margin">
+            <div class="card card-shadow h-100">
               <img
                 src="img/ideas-card-1.jpg"
                 class="card-img-top"
@@ -172,7 +175,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card card-margin h-100">
+            <div class="card card-shadow h-100">
               <img
                 src="img/ideas-card-2.jpg"
                 class="card-img-top"
@@ -191,7 +194,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card card-margin h-100">
+            <div class="card card-shadow h-100">
               <img src="img/ideas-card-3.jpg" class="card-img-top" alt="fish" />
               <div class="card-body">
                 <h5 class="card-title">Лосось на гриле</h5>
@@ -230,7 +233,7 @@
       <div class="recipes-cards container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100">
+            <div class="card card-shadow h-100">
               <img
                 src="img/recipes-card-1.jpg"
                 class="card-img-top"
@@ -250,7 +253,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card card-shadow h-100">
               <img
                 src="img/recipes-card-2.jpg"
                 class="card-img-top"
@@ -269,7 +272,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card card-shadow h-100">
               <img
                 src="img/recipes-card-3.jpg"
                 class="card-img-top"
@@ -310,7 +313,7 @@
       <h2 class="heading">Статьи</h2>
       <p class="info">Полезные советы и лайфхаки от мировых шеф-поваров</p>
       <div class="articles-cards container">
-        <div class="card mb-3">
+        <div class="card card-shadow">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -331,7 +334,7 @@
             </div>
           </div>
           </div>
-          <div class="card mb-3">
+          <div class="card card-shadow">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -352,7 +355,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card card-shadow">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -373,7 +376,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card card-shadow">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -433,7 +436,7 @@
           </div>
         </div>
         <div class="social-buttons"></div>
-        <div class="copyright">2021 Все права защищены</div>
+        <div class="copyright"><span id="year"></span> &copy; Все права защищены</div>
       </div>
     </footer>
     <script
@@ -441,5 +444,10 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const spanYear = document.getElementById('year');
+
+      spanYear.innerHTML = `${new Date().getFullYear()}`;
+    </script>
   </body>
 </html>
