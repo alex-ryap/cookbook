@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+section {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section:first-child {
+  padding-top: 0;
+  display: block;
+}
+
+.heading {
+  text-align: center;
+}
+
+.info {
+  width: 60%;
+  text-align: center;
+}
+
+.page-item.active .page-link {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.page-link,
+.page-link:hover {
+  color: #2ecc71;
+}
+
+.top .logo {
+  width: 35%;
+}
+
+.top .name-brand {
+  font-family: 'Dancing Script', sans-serif;
+}
+
+.top .name-logo {
+  padding-left: 5px;
+  font-size: 24px;
+}
+
+.top .top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 25vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.top .top-content-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.top .top-content-name-brand {
+  font-size: 64px;
+}
+
+.top .carousel-content {
+  right: unset;
+  top: 1.25rem;
+  bottom: unset;
+  left: 5%;
+  color: #000;
+  text-align: start;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+}
+
+.top .carousel-content-text {
+  margin-bottom: 0;
+}
+
+.ideas-cards {
+  margin: 50px 0;
+}
+
+.recipes-cards {
+  margin: 50px 0;
+}
+
+.articles-cards {
+  margin: 50px 0;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.footer-content {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-content .contacts {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-content .contacts-data {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.footer-content .contacts-data-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .card-margin {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
