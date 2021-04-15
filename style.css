@@ -157,7 +157,6 @@ section {
 
 .footer-content .contacts {
   margin-top: 30px;
-  margin-bottom: 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,12 +169,41 @@ section {
 
 .footer-content .contacts-data {
   width: 200px;
-  margin-bottom: 30px;
 }
 
 .footer-content .contacts-data-list {
   padding: 0;
   list-style-type: none;
+}
+
+.footer-content .social-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-content .social-buttons .social-button {
+  padding: 10px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  margin-right: 15px;
+}
+
+.footer-content .social-buttons .social-button:last-child {
+  margin-right: 0;
+}
+
+.footer-content .social-buttons .social-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer .copyright {
